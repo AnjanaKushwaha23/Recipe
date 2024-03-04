@@ -1,0 +1,28 @@
+.card_list {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.card_list--item {
+    /* border: 1px solid #ebebeb;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; */
+    padding: 0px 20px;
+    /* max-height: 400px;
+    height: 100%;
+    overflow: auto; */
+    max-width: 300px;
+    width: 100%;
+}
+
+.card_list--item img{
+    max-width: 250px;
+    height: auto;
+    width: 100%;
+    object-fit: contain;
+}
+
+@media(max-width:992px){
+    .card_list {flex-wrap: wrap;}
+}
